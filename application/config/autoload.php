@@ -87,7 +87,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'fotoGender_helper');
+$autoload['helper'] = array('url');
 
 
 /*
