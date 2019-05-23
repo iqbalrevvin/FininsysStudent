@@ -25,7 +25,7 @@ class OutputView {
 	{
 		$data = $data_add;
 		$data['settings'] = $this->CI->db->get('settings', 1)->row();
-		/*$this->CI->db->where('user_id', $this->CI->ion_auth->user()->row()->id);
+		$this->CI->db->where('user_id', $this->CI->ion_auth->user()->row()->id);
 		$groups    = $this->CI->db->get('users_groups');
 		$i         = 0;
 		$id_groups = '';
@@ -59,7 +59,7 @@ class OutputView {
 		$this->CI->db->where($whereLvlTwo);
 		$this->CI->db->order_by('sort', 'ASC');
 		$this->CI->db->group_by('id_menu');
-		$data['menu_lvlTwo'] = $this->CI->db->get('view_menu');*/
+		$data['menu_lvlTwo'] = $this->CI->db->get('view_menu');
 
 		$data['title'] = $data['settings']->judul;
 
