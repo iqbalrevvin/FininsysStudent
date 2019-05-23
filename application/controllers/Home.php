@@ -7,9 +7,9 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('OutputView');
-		$this->load->helper('tglIndo_helper');
+		/*$this->load->helper('tglIndo_helper');
 		$this->load->helper('semester_helper');		
-		$this->load->helper('grade_helper');
+		$this->load->helper('grade_helper');*/
 	}
 
 	public function index(){
