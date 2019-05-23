@@ -4,7 +4,7 @@
         aria-expanded="false">
         <span class="name"><?= $this->session->userdata('username'); ?></span>
         <span>
-            <img alt="Profile Picture" src="<?= base_url('assets/img/foto_pd/'.fotoGender($user->foto_pd, $user->jk_pd)) ?>" />
+            <img alt="Profile Picture" src="<?= base_url('assets/img/foto_pd/') ?>" />
         </span>
     </button>
 

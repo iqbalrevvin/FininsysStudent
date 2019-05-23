@@ -7,9 +7,10 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('OutputView');
-		//$this->load->helper('tglIndo_helper');
+		$this->load->helper('tglIndo_helper');
 		$this->load->helper('semester_helper');		
 		$this->load->helper('grade_helper');
+		//$this->load->model('User_m');
 	}
 
 	public function index(){
@@ -18,7 +19,7 @@ class Home extends CI_Controller {
 		$username 			= $username = $this->session->userdata('username');
 		$data['user'] 		= $this->User_m->user($username);
 		$template      		= 'admin_template';
-		$view          		= 'home.php';
+		$view          		= 'home';
         $this->outputview->outputAdmin($view, $template, $data);
 	}
 
