@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $title ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     <meta name="description" content="Portal Sistem Akademik Siswa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,8 @@
     <meta property="og:url"             content="porsis.rasanarasyidah.sch.id" />
     <meta property="og:type"            content="website"/>
     <meta property="og:title"           content="Fininsys" />
-    <meta property="og:description"     content="Financial & Information System" />
+    <meta property="og:description"     content="Fininsys Student Portal" />
+    <meta property="og:image"           content="<?= base_url('assets/thumb-app/app.png') ?>">
     <meta http-equiv="Content-Type"     content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +29,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#F0FFF0">
     <meta content='id' name='language'/>
-
+    <link itemprop="thumbnailUrl" href="<?= base_url('assets/thumb-app/app.png') ?>"> 
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
+        <link itemprop="url" href="<?= base_url('assets/thumb-app/app.png') ?>">
+    </span>
     <link rel="stylesheet" href="<?= base_url('assets/font/iconsmind/style.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/font/simple-line-icons/css/simple-line-icons.css') ?>" />
     <!-- PLUGIN / VENDOR -->
