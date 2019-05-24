@@ -30,10 +30,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#F0FFF0">
     <meta content='id' name='language'/>
-    <link itemprop="thumbnailUrl" href="<?= base_url('assets/img/thumb-app/app.png') ?>"> 
+<!--     <link itemprop="thumbnailUrl" href="<?= base_url('assets/img/thumb-app/app.png') ?>"> 
     <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
         <link itemprop="url" href="<?= base_url('assets/img/thumb-app/app.png') ?>">
-    </span>
+    </span> -->
     <link rel="stylesheet" href="<?= base_url('assets/font/iconsmind/style.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/font/simple-line-icons/css/simple-line-icons.css') ?>" />
     <!-- PLUGIN / VENDOR -->
