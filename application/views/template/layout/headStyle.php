@@ -26,7 +26,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#F8F8FF">
+    <meta name="theme-color" content="#F0FFF0">
     <meta content='id' name='language'/>
 
     <link rel="stylesheet" href="<?= base_url('assets/font/iconsmind/style.css') ?>" />
@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/owl.carousel.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/nouislider.min.css') ?>" />
     <!-- - -->
-
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/dore.light.blue.min.css') ?>" />
     <link rel="shortcut icon" href="<?= base_url('assets/img/'.$settings->logo) ?>" />

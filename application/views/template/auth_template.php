@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title><?= $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portal Sistem Akademik Siswa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,6 +38,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/bootstrap.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/bootstrap-float-label.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/dore.light.blue.min.css') ?>" />
     <link rel="shortcut icon" href="<?= base_url('assets/img/'.$settings->logo) ?>" />
 </head>
 
