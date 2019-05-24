@@ -20,7 +20,8 @@
     <meta property="og:url"             content="porsis.rasanarasyidah.sch.id" />
     <meta property="og:type"            content="website"/>
     <meta property="og:title"           content="Fininsys" />
-    <meta property="og:description"     content="Fininsys Student Portal<br>Portal Sistem Akademik Siswa" />
+    <meta property="og:description"     content="Fininsys Student Portal" />
+    <meta property="og:description"     content="Portal Sistem Akademik Siswa" />
     <meta property="og:image"           content="<?= base_url('assets/img/thumb-app/login.png') ?>">
     <meta http-equiv="Content-Type"     content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
