@@ -18,7 +18,7 @@
     <meta property="og:type"            content="website"/>
     <meta property="og:title"           content="Fininsys" />
     <meta property="og:description"     content="Fininsys Student Portal" />
-    <meta property="og:image"           content="<?= base_url('assets/thumb-app/app.png') ?>">
+    <meta property="og:image"           content="<?= base_url('assets/img/thumb-app/app.png') ?>">
     <meta http-equiv="Content-Type"     content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +29,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#F0FFF0">
     <meta content='id' name='language'/>
-    <link itemprop="thumbnailUrl" href="<?= base_url('assets/thumb-app/app.png') ?>"> 
+    <link itemprop="thumbnailUrl" href="<?= base_url('assets/img/thumb-app/app.png') ?>"> 
     <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
-        <link itemprop="url" href="<?= base_url('assets/thumb-app/app.png') ?>">
+        <link itemprop="url" href="<?= base_url('assets/img/thumb-app/app.png') ?>">
     </span>
     <link rel="stylesheet" href="<?= base_url('assets/font/iconsmind/style.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/font/simple-line-icons/css/simple-line-icons.css') ?>" />
