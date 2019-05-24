@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/perfect-scrollbar.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/dataTables.bootstrap4.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/datatables.responsive.bootstrap4.min.css') ?>" />
+
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/select2.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/select2-bootstrap.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/perfect-scrollbar.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/owl.carousel.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/nouislider.min.css') ?>" />
-    <link rel="stylesheet" href="<?= base_url('') ?>" />
-    <link rel="stylesheet" href="<?= base_url('') ?>" />
     <!-- - -->
 
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>" />

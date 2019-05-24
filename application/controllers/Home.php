@@ -10,6 +10,8 @@ class Home extends CI_Controller {
 		$this->load->helper('tgl_indo_helper');
 		$this->load->helper('semester_helper');		
 		$this->load->helper('grade_helper');
+		$this->load->helper('value_helper');
+		$this->load->model('Nilai_m');
 		//$this->load->model('User_m');
 	}
 
@@ -18,6 +20,7 @@ class Home extends CI_Controller {
 		$data['subJudul'] 	= 'Halaman Beranda';
 		$username 			= $username = $this->session->userdata('username');
 		$data['user'] 		= $this->User_m->user($username);
+		$data['nilai'] 		= $this->Nilai_m->nilai($username);
 		$template      		= 'admin_template';
 		$view          		= 'home';
         $this->outputview->outputAdmin($view, $template, $data);

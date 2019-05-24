@@ -1,5 +1,4 @@
 <div class="row">
-
     <div class="col-lg-12 col-xl-7">
         <div class="icon-cards-row">
             <div class="owl-container">
@@ -56,42 +55,36 @@
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title">Quick Post</h5>
-                        <div class="dashboard-quick-post">
-                            <form>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Title</label>
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Content</label>
-                                    <div class="col-sm-9">
-                                        <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Category</label>
-                                    <div class="col-sm-9">
-                                        <label class="w-100">
-                                            <select class="form-control select2-single">
-                                                <option label="&nbsp;">&nbsp;</option>
-                                                <option>Cakes</option>
-                                                <option>Cupcakes</option>
-                                                <option>Desserts</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row mb-0">
-                                    <div class="col-sm-12">
-                                        <button type="submit" class="btn btn-primary float-right">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        <h5 class="card-title">Data Nilai</h5>
+                        <table id="table" class="data-table table table-striped responsive" 
+                        	data-order="[[ 2, &quot;desc&quot; ]]" width="750px">
+                            <thead>
+                                <tr>
+                                    <th style="width:600px">Mata Pelajaran</th>
+                                    <th>Smt</th>
+                                    <th>Pengetahuan</th>
+                                    <th>Keterampilan</th>
+                                    <th>Sikap</th>
+                                    <th>Sosial</th>
+                     				<th>Spritual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<?php foreach ($nilai as $nilai): ?>
+	                                <tr>
+	                                    <td >
+	                                    	<small><b><?= $nilai->nama_mata_pelajaran ?></small></b>
+	                                    </td>
+	                                    <td><?= $nilai->semester ?></td>
+	                                    <td><?= $nilai->nilai_pengetahuan ?></td>
+	                                    <td><?= $nilai->nilai_keterampilan ?></td>
+	                                    <td><?= $nilai->nilai_sikap ?></td>
+	                                    <td><?= $nilai->nilai_sosial ?></td>
+	                          			<td><?= $nilai->nilai_spritual ?></td>
+	                                </tr>
+ 								<?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -116,22 +109,6 @@
 	                        </td>
 	                        <td>
 	                            <p class="text-bold">: <?= $user->nama_pd ?></p>
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                            <p class="list-item-heading">Tingkat</p>
-	                        </td>
-	                        <td>
-	                            <p class="text">: <?= grade($user->tahun_angkatan, $user->jumlah_semester) ?></p>
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                            <p class="list-item-heading">Semester</p>
-	                        </td>
-	                        <td>
-	                            <p class="text">: <?= semester($user->tahun_angkatan, $user->jumlah_semester) ?></p>
 	                        </td>
 	                    </tr>
 	                    <tr>
@@ -171,55 +148,43 @@
 	                            <p class="list-item-heading">Agama</p>
 	                        </td>
 	                        <td>
-	                            <p class="text-muted">1100</p>
+	                            <p class="text">: <?= $user->agama ?></p>
 	                        </td>
 	                    </tr>
 	                    <tr>
 	                        <td>
-	                            <p class="list-item-heading">test</p>
+	                            <p class="list-item-heading">Provinsi</p>
 	                        </td>
 	                        <td>
-	                            <p class="text-muted">1003</p>
+	                            <p class="text">: <?= value($user->nama_provinsi) ?></p>
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <td><p class="list-item-heading">Kabupaten</p></td>
+	                        <td>
+	                            <p class="text">: <?= value($user->nama_kabupaten) ?></p>
 	                        </td>
 	                    </tr>
 	                    <tr>
 	                        <td>
-	                            <p class="list-item-heading">test</p>
+	                            <p class="list-item-heading">Kecamatan</p>
 	                        </td>
 	                        <td>
-	                            <p class="text-muted">952</p>
+	                            <p class="text">: <?= value($user->nama_kecamatan) ?></p>
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <td><p class="list-item-heading">Kelurahan</p></td>
+	                        <td>
+	                            <p class="text">: <?= value($user->nama_kelurahan) ?></p>
 	                        </td>
 	                    </tr>
 	                    <tr>
 	                        <td>
-	                            <p class="list-item-heading">test</p>
+	                            <p class="list-item-heading">Status</p>
 	                        </td>
 	                        <td>
-	                            <p class="text-muted">924</p>
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                            <p class="list-item-heading">test</p>
-	                        </td>
-	                        <td>
-	                            <p class="text-muted">842</p>
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                            <p class="list-item-heading">test</p>
-	                        </td>
-	                        <td>
-	                            <p class="text-muted">810</p>
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <td>
-	                            <p class="list-item-heading">test</p>
-	                        </td>
-	                        <td>
-	                            <p class="text-muted">605</p>
+	                            <p class="text-muted">: <?= $user->status_pd ?></p>
 	                        </td>
 	                    </tr>
 	                </tbody>
