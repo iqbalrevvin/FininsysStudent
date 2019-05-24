@@ -30,7 +30,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#0000FF">
+    <meta name="theme-color" content="#483D8B">
     <meta content='id' name='language'/>
 
     <link rel="stylesheet" href="<?= base_url('assets/font/iconsmind/style.css') ?>" />
