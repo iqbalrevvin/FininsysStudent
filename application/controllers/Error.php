@@ -12,7 +12,7 @@ class Error extends CI_Controller {
 	public function index()
 	{
         $this->output->set_status_header('404');
-		if (!$this->ion_auth->logged_in()) {
+		if ($this->session->userdata('username') == "") {
 			$template      = 'auth_template';
 			$view          = 'error_page/error_404';
 	        /*$this->outputview->output_front($view, $template);*/

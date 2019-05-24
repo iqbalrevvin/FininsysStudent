@@ -12,12 +12,12 @@ class Authentication extends CI_Controller {
 		if($this->session->userdata('username') == ""){
 			redirect('Authentication/Login');
 		}else{
-			redirect('home');
+			redirect('');
 		}
 	}
 
 	public function login(){
-		$data['redirect'] = site_url('home');
+		$data['redirect'] = site_url('');
 		$view             = 'auth/login';
 		$template         = 'auth_template';
 		$this->outputview->output_front($view, $template, $data);
