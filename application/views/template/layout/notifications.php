@@ -1,4 +1,4 @@
- <div class="position-relative d-inline-block">
+<!--  <div class="position-relative d-inline-block">
     <button class="header-icon btn btn-empty" type="button" id="notificationButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         <i class="simple-icon-bell"></i>
@@ -54,4 +54,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

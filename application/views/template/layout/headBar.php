@@ -21,12 +21,12 @@
             </svg>
         </a>
 
-        <div class="search" data-search-path="Layouts.Search.html?q=">
+        <!-- <div class="search" data-search-path="Layouts.Search.html?q=">
             <input placeholder="Search...">
             <span class="search-icon">
                 <i class="simple-icon-magnifier"></i>
             </span>
-        </div>
+        </div> -->
     </div>
     <a class="navbar-logo" href="">
         <h3><b>Fininsys</b></h3>

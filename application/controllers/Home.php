@@ -19,8 +19,10 @@ class Home extends CI_Controller {
 		$data['judul'] 		= 'Beranda';
 		$data['subJudul'] 	= 'Halaman Beranda';
 		$username 			= $username = $this->session->userdata('username');
+		$data['username'] 	= $username;
 		$data['user'] 		= $this->User_m->user($username);
-		$data['nilai'] 		= $this->Nilai_m->nilai($username);
+		$data['nilai'] 		= $this->Nilai_m->nilai($username)->result();
+		$data['nilaiRow'] 	= $this->Nilai_m->nilai($username)->row();
 		$template      		= 'admin_template';
 		$view          		= 'home';
         $this->outputview->outputAdmin($view, $template, $data);
