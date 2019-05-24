@@ -8,7 +8,7 @@ class User_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('peserta_didik');
 		$this->db->join('detail_peserta_didik', 'peserta_didik.NIK_pd = detail_peserta_didik.NIK_pd', 'left');
-		$this->db->join('ortu_peserta_didik', 'peserta_didik.NIK_pd = peserta_didik.NIK_pd', 'left');
+		$this->db->join('ortu_peserta_didik', 'peserta_didik.NIK_pd = ortu_peserta_didik.NIK_pd', 'left');
 		$this->db->join('kelas', 'detail_peserta_didik.idKelas = kelas.idKelas', 'left');
 		$this->db->join('program_studi', 'kelas.idProdi = program_studi.idProdi', 'left');
 		$this->db->join('provinsi', 'peserta_didik.idProvinsi = provinsi.id_prov', 'left');

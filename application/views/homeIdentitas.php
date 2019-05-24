@@ -21,7 +21,7 @@
                         <p class="list-item-heading">NIK</p>
                     </td>
                     <td>
-                        <p class="text">: <?= value($user->NIK_pd) ?></p>
+                        <p class="text">: <?= value($username) ?></p>
                     </td>
                 </tr>
                 <tr>
