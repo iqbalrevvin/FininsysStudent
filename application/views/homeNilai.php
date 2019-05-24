@@ -33,7 +33,7 @@
                     	<?php foreach ($nilai as $nilai): ?>
                             <tr>
                                 <td >
-                                	<small><b><?= $nilai->nama_mata_pelajaran ?></small></b>
+                                	<?= $nilai->nama_mata_pelajaran ?>
                                 </td>
                                 <td><?= $nilai->semester ?></td>
                                 <td><?= $nilai->nilai_pengetahuan ?></td>
