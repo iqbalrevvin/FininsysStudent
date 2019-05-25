@@ -16,6 +16,5 @@
 </style>				
 
 
-<div class="col-xl-12 col-lg-12 mb-4">
+
 	<iframe width="100%" height="500" src="http://smpplus.rasanarasyidah.sch.id/"></iframe>
-</div>
