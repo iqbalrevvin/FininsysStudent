@@ -18,6 +18,11 @@
                     <i class="simple-icon-home"></i> Beranda
                 </a>
             </li>
+            <li class="active">
+                <a href="<?= base_url('Home/OfficialPage') ?>">
+                    <i class="iconsmind-URL-Window"></i> Website Resmi
+                </a>
+            </li>
         </ul>
     </div>
 </div>

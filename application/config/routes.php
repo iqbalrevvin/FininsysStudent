@@ -53,5 +53,6 @@ $route['default_controller'] = 'home';
 //PESERTA DIDIK
 
 $route['Home'] = '';
+
 $route['404_override'] = 'error';
 $route['translate_uri_dashes'] = TRUE;

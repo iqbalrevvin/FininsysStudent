@@ -28,6 +28,14 @@ class Home extends CI_Controller {
         $this->outputview->outputAdmin($view, $template, $data);
 	}
 
+	public function officialPage(){
+		$data['judul'] 		= 'Website Resmi';
+		$data['subJudul'] 	= 'Website Resmi SMP Plus Rasana Rasyidah';
+		$template      		= 'admin_template';
+		$view          		= 'officialPage';
+		$this->outputview->outputAdmin($view, $template, $data);
+	}
+
 }
 
 /* End of file Home.php */
