@@ -17,16 +17,19 @@
             <div class="card-body">
                 <h5 class="card-title">Data Nilai <?= $user->nama_pd ?></h5>
                 <table id="table" class="data-table table table-striped responsive" 
-                	data-order="[[ 2, &quot;desc&quot; ]]" width="750px">
+                	data-order="[[ 1, &quot;desc&quot; ]]" width="750px">
                     <thead>
                         <tr>
                             <th style="width:600px">Mata Pelajaran</th>
                             <th>Smt</th>
-                            <th>Pengetahuan</th>
-                            <th>Keterampilan</th>
+                            <th>KKM Png.</th>
+                            <th>N. Pengetahuan</th>
+                            <th>KKM Ktr.</th>
+                            <th>N. Keterampilan</th>
                             <th>Sikap</th>
                             <th>Sosial</th>
              				<th>Spritual</th>
+                            <th>Catatan Guru</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,11 +39,14 @@
                                 	<?= $nilai->nama_mata_pelajaran ?>
                                 </td>
                                 <td><?= $nilai->semester ?></td>
+                                <td><?= $nilai->kkm_pengetahuan ?></td>
                                 <td><?= $nilai->nilai_pengetahuan ?></td>
+                                <td><?= $nilai->kkm_keterampilan ?></td>
                                 <td><?= $nilai->nilai_keterampilan ?></td>
                                 <td><?= $nilai->nilai_sikap ?></td>
                                 <td><?= $nilai->nilai_sosial ?></td>
                       			<td><?= $nilai->nilai_spritual ?></td>
+                                <td><?= value($nilai->catatan) ?></td>
                             </tr>
 							<?php endforeach; ?>
                     </tbody>
