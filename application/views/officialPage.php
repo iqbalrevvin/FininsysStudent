@@ -15,6 +15,4 @@
 	}
 </style>				
 
-
-
-	<iframe width="100%" height="500" src="http://smpplus.rasanarasyidah.sch.id/"></iframe>
+<iframe width="100%" height="500" src="http://smpplus.rasanarasyidah.sch.id/"></iframe>
